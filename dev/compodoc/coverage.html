@@ -14,7 +14,7 @@
     </head>
     <body>
           <script>
-               // Blocking script to avaoid flickering dark mode
+               // Blocking script to avoid flickering dark mode
                // Dark mode toggle button
                var useDark = window.matchMedia('(prefers-color-scheme: dark)');
                var darkModeState = useDark.matches;
@@ -63,9 +63,11 @@
                toggleDarkMode(darkModeState);
           </script>
 
-        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
-            <a href="./" class="navbar-brand">awg-app documentation</a>
-            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        <div class="navbar navbar-default navbar-fixed-top d-md-none p-0">
+               <div class="d-flex">
+                    <a href="./" class="navbar-brand">awg-app documentation</a>
+                    <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+               </div>
         </div>
 
         <div class="xs-menu menu" id="mobile-menu">
@@ -74,7 +76,7 @@
 
         <div class="container-fluid main">
            <div class="row main">
-               <div class="hidden-xs menu">
+               <div class="d-none d-md-block menu">
                    <compodoc-menu mode="normal"></compodoc-menu>
                </div>
                <!-- START CONTENT -->
@@ -3420,6 +3422,18 @@
         <tr class="very-good">
             <td>
                 <!-- miscellaneous -->
+                <a href="./components/SourceDescriptionCorrectionsComponent.html">src/app/views/edition-view/edition-outlets/edition-complex/edition-detail/edition-report/source-description/source-description-corrections/source-description-corrections.component.ts</a>
+            </td>
+            <td>component</td>
+            <td>SourceDescriptionCorrectionsComponent</td>
+            <td align="right" data-sort="90">
+                <span class="coverage-percent">90 %</span>
+                <span class="coverage-count">(9/10)</span>
+            </td>
+        </tr>
+        <tr class="very-good">
+            <td>
+                <!-- miscellaneous -->
                 <a href="./components/SourceDescriptionComponent.html">src/app/views/edition-view/edition-outlets/edition-complex/edition-detail/edition-report/source-description/source-description.component.ts</a>
             </td>
             <td>component</td>
@@ -3511,6 +3525,18 @@
             <td align="right" data-sort="100">
                 <span class="coverage-percent">100 %</span>
                 <span class="coverage-count">(5/5)</span>
+            </td>
+        </tr>
+        <tr class="very-good">
+            <td>
+                <!-- miscellaneous -->
+                <a href="./components/EditionSvgSheetViewerNavComponent.html">src/app/views/edition-view/edition-outlets/edition-complex/edition-detail/edition-sheets/edition-accolade/edition-svg-sheet-viewer/edition-svg-sheet-viewer-nav/edition-svg-sheet-viewer-nav.component.ts</a>
+            </td>
+            <td>component</td>
+            <td>EditionSvgSheetViewerNavComponent</td>
+            <td align="right" data-sort="100">
+                <span class="coverage-percent">100 %</span>
+                <span class="coverage-count">(3/3)</span>
             </td>
         </tr>
         <tr class="very-good">
@@ -4398,7 +4424,7 @@
             <td>SourceDescriptionDesc</td>
             <td align="right" data-sort="100">
                 <span class="coverage-percent">100 %</span>
-                <span class="coverage-count">(12/12)</span>
+                <span class="coverage-count">(13/13)</span>
             </td>
         </tr>
         <tr class="very-good">

@@ -14,7 +14,7 @@
     </head>
     <body>
           <script>
-               // Blocking script to avaoid flickering dark mode
+               // Blocking script to avoid flickering dark mode
                // Dark mode toggle button
                var useDark = window.matchMedia('(prefers-color-scheme: dark)');
                var darkModeState = useDark.matches;
@@ -63,9 +63,11 @@
                toggleDarkMode(darkModeState);
           </script>
 
-        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
-            <a href="./" class="navbar-brand">awg-app documentation</a>
-            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        <div class="navbar navbar-default navbar-fixed-top d-md-none p-0">
+               <div class="d-flex">
+                    <a href="./" class="navbar-brand">awg-app documentation</a>
+                    <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+               </div>
         </div>
 
         <div class="xs-menu menu" id="mobile-menu">
@@ -74,7 +76,7 @@
 
         <div class="container-fluid main">
            <div class="row main">
-               <div class="hidden-xs menu">
+               <div class="d-none d-md-block menu">
                    <compodoc-menu mode="normal"></compodoc-menu>
                </div>
                <!-- START CONTENT -->
@@ -738,6 +740,23 @@
                                 </p>
                         <footer class="text-center">
                             <a href="./modules/SideInfoRoutingModule.html" class="btn btn-default">Browse</a>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card card-module">
+                    <div class="card-header">
+                        <h4 class="card-title">SourceDescriptionModule</h4>
+                    </div>
+                    <div class="card-block">
+                                <p>
+                                    <object id="demo-svg" type="image/svg+xml" lazy="./modules/SourceDescriptionModule/dependencies.svg" style="width: 100%; height: 175px;">
+                                        Your browser does not support SVG
+                                    </object>
+                                </p>
+                        <footer class="text-center">
+                            <a href="./modules/SourceDescriptionModule.html" class="btn btn-default">Browse</a>
                         </footer>
                     </div>
                 </div>
