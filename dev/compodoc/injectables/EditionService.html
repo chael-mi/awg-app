@@ -152,11 +152,11 @@ other parts of the edition outline.</p>
                             <li>
                                     <span class="modifier">Private</span>
                                     <span class="modifier">Readonly</span>
-                                <a href="#_editionComplexStream$" >_editionComplexStream$</a>
+                                <a href="#_isPrefaceViewStream$" >_isPrefaceViewStream$</a>
                             </li>
                             <li>
                                     <span class="modifier">Private</span>
-                                <a href="#_editionComplexSubject" >_editionComplexSubject</a>
+                                <a href="#_isPrefaceViewSubject" >_isPrefaceViewSubject</a>
                             </li>
                             <li>
                                     <span class="modifier">Private</span>
@@ -166,6 +166,15 @@ other parts of the edition outline.</p>
                             <li>
                                     <span class="modifier">Private</span>
                                 <a href="#_isRowTableViewSubject" >_isRowTableViewSubject</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#_selectedEditionComplexStream$" >_selectedEditionComplexStream$</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_selectedEditionComplexSubject" >_selectedEditionComplexSubject</a>
                             </li>
                             <li>
                                     <span class="modifier">Private</span>
@@ -198,19 +207,19 @@ other parts of the edition outline.</p>
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
-                                <a href="#clearEditionComplex" >clearEditionComplex</a>
+                                <a href="#clearIsPrefaceView" >clearIsPrefaceView</a>
                             </li>
                             <li>
                                 <a href="#clearIsRowTableView" >clearIsRowTableView</a>
+                            </li>
+                            <li>
+                                <a href="#clearSelectedEditionComplex" >clearSelectedEditionComplex</a>
                             </li>
                             <li>
                                 <a href="#clearSelectedEditionSection" >clearSelectedEditionSection</a>
                             </li>
                             <li>
                                 <a href="#clearSelectedEditionSeries" >clearSelectedEditionSeries</a>
-                            </li>
-                            <li>
-                                <a href="#getEditionComplex" >getEditionComplex</a>
                             </li>
                             <li>
                                 <a href="#getEditionOutline" >getEditionOutline</a>
@@ -222,10 +231,13 @@ other parts of the edition outline.</p>
                                 <a href="#getEditionSeriesById" >getEditionSeriesById</a>
                             </li>
                             <li>
-                                <a href="#getEditionSeriesRoute" >getEditionSeriesRoute</a>
+                                <a href="#getIsPrefaceView" >getIsPrefaceView</a>
                             </li>
                             <li>
                                 <a href="#getIsRowTableView" >getIsRowTableView</a>
+                            </li>
+                            <li>
+                                <a href="#getSelectedEditionComplex" >getSelectedEditionComplex</a>
                             </li>
                             <li>
                                 <a href="#getSelectedEditionSection" >getSelectedEditionSection</a>
@@ -234,10 +246,13 @@ other parts of the edition outline.</p>
                                 <a href="#getSelectedEditionSeries" >getSelectedEditionSeries</a>
                             </li>
                             <li>
-                                <a href="#updateEditionComplex" >updateEditionComplex</a>
+                                <a href="#updateIsPrefaceView" >updateIsPrefaceView</a>
                             </li>
                             <li>
                                 <a href="#updateIsRowTableView" >updateIsRowTableView</a>
+                            </li>
+                            <li>
+                                <a href="#updateSelectedEditionComplex" >updateSelectedEditionComplex</a>
                             </li>
                             <li>
                                 <a href="#updateSelectedEditionSection" >updateSelectedEditionSection</a>
@@ -267,32 +282,32 @@ other parts of the edition outline.</p>
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="clearEditionComplex"></a>
+                    <a name="clearIsPrefaceView"></a>
                     <span class="name">
-                        <span ><b>clearEditionComplex</b></span>
-                        <a href="#clearEditionComplex"><span class="icon ion-ios-link"></span></a>
+                        <span ><b>clearIsPrefaceView</b></span>
+                        <a href="#clearIsPrefaceView"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>clearEditionComplex()</code>
+<code>clearIsPrefaceView()</code>
                 </td>
             </tr>
 
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="98"
-                                    class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:98</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="249"
+                                    class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:249</a></div>
                         </td>
                     </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                        <div class="io-description"><p>Public method: clearEditionComplex.</p>
-<p>It clears the edition complex stream.</p>
+                        <div class="io-description"><p>Public method: clearIsPrefaceView.</p>
+<p>It clears the isPrefaceView stream.</p>
 </div>
 
                         <div class="io-description">
@@ -300,7 +315,7 @@ other parts of the edition outline.</p>
 
                         </div>
                             <div class="io-description">
-                                <p>Clears the edition complex stream.</p>
+                                <p>Clears the isPrefaceView stream.</p>
 
                             </div>
                 </td>
@@ -327,8 +342,8 @@ other parts of the edition outline.</p>
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="251"
-                                    class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:251</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="284"
+                                    class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:284</a></div>
                         </td>
                     </tr>
 
@@ -355,6 +370,50 @@ other parts of the edition outline.</p>
         <tbody>
             <tr>
                 <td class="col-md-4">
+                    <a name="clearSelectedEditionComplex"></a>
+                    <span class="name">
+                        <span ><b>clearSelectedEditionComplex</b></span>
+                        <a href="#clearSelectedEditionComplex"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>clearSelectedEditionComplex()</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="107"
+                                    class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:107</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-description"><p>Public method: clearSelectedEditionComplex.</p>
+<p>It clears the selected edition complex stream.</p>
+</div>
+
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                        </div>
+                            <div class="io-description">
+                                <p>Clears the edition complex stream.</p>
+
+                            </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
                     <a name="clearSelectedEditionSection"></a>
                     <span class="name">
                         <span ><b>clearSelectedEditionSection</b></span>
@@ -371,8 +430,8 @@ other parts of the edition outline.</p>
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="216"
-                                    class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:216</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="214"
+                                    class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:214</a></div>
                         </td>
                     </tr>
 
@@ -415,8 +474,8 @@ other parts of the edition outline.</p>
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="181"
-                                    class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:181</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="179"
+                                    class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:179</a></div>
                         </td>
                     </tr>
 
@@ -443,50 +502,6 @@ other parts of the edition outline.</p>
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="getEditionComplex"></a>
-                    <span class="name">
-                        <span ><b>getEditionComplex</b></span>
-                        <a href="#getEditionComplex"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-            <tr>
-                <td class="col-md-4">
-<code>getEditionComplex()</code>
-                </td>
-            </tr>
-
-
-                    <tr>
-                        <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="74"
-                                    class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:74</a></div>
-                        </td>
-                    </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-                        <div class="io-description"><p>Public method: getEditionComplex.</p>
-<p>It provides the latest edition complex from the edition complex stream.</p>
-</div>
-
-                        <div class="io-description">
-                            <b>Returns : </b>        <code><a href="../classes/EditionComplex.html" target="_self" >Observable&lt;EditionComplex&gt;</a></code>
-
-                        </div>
-                            <div class="io-description">
-                                <p>The edition complex stream as observable.</p>
-
-                            </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
                     <a name="getEditionOutline"></a>
                     <span class="name">
                         <span ><b>getEditionOutline</b></span>
@@ -503,8 +518,8 @@ other parts of the edition outline.</p>
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="109"
-                                    class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:109</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="118"
+                                    class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:118</a></div>
                         </td>
                     </tr>
 
@@ -547,8 +562,8 @@ other parts of the edition outline.</p>
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="147"
-                                    class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:147</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="145"
+                                    class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:145</a></div>
                         </td>
                     </tr>
 
@@ -639,8 +654,8 @@ other parts of the edition outline.</p>
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="133"
-                                    class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:133</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="131"
+                                    class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:131</a></div>
                         </td>
                     </tr>
 
@@ -699,40 +714,40 @@ other parts of the edition outline.</p>
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="getEditionSeriesRoute"></a>
+                    <a name="getIsPrefaceView"></a>
                     <span class="name">
-                        <span ><b>getEditionSeriesRoute</b></span>
-                        <a href="#getEditionSeriesRoute"><span class="icon ion-ios-link"></span></a>
+                        <span ><b>getIsPrefaceView</b></span>
+                        <a href="#getIsPrefaceView"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>getEditionSeriesRoute()</code>
+<code>getIsPrefaceView()</code>
                 </td>
             </tr>
 
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="120"
-                                    class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:120</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="225"
+                                    class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:225</a></div>
                         </td>
                     </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                        <div class="io-description"><p>Public method: getEditionSeriesRoute.</p>
-<p>It provides the base route for the edition series section of the app.</p>
+                        <div class="io-description"><p>Public method: getIsPrefaceView.</p>
+<p>It provides the latest isPrefaceView flag from the isPrefaceView stream.</p>
 </div>
 
                         <div class="io-description">
-                            <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                            <b>Returns : </b>    <code>Observable&lt;boolean&gt;</code>
 
                         </div>
                             <div class="io-description">
-                                <p>The edition series route.</p>
+                                <p>The isPrefaceView stream as observable.</p>
 
                             </div>
                 </td>
@@ -759,8 +774,8 @@ other parts of the edition outline.</p>
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="227"
-                                    class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:227</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="260"
+                                    class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:260</a></div>
                         </td>
                     </tr>
 
@@ -787,6 +802,50 @@ other parts of the edition outline.</p>
         <tbody>
             <tr>
                 <td class="col-md-4">
+                    <a name="getSelectedEditionComplex"></a>
+                    <span class="name">
+                        <span ><b>getSelectedEditionComplex</b></span>
+                        <a href="#getSelectedEditionComplex"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getSelectedEditionComplex()</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="83"
+                                    class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:83</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-description"><p>Public method: getSelectedEditionComplex.</p>
+<p>It provides the latest selected edition complex from the edition complex stream.</p>
+</div>
+
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="../classes/EditionComplex.html" target="_self" >Observable&lt;EditionComplex&gt;</a></code>
+
+                        </div>
+                            <div class="io-description">
+                                <p>The edition complex stream as observable.</p>
+
+                            </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
                     <a name="getSelectedEditionSection"></a>
                     <span class="name">
                         <span ><b>getSelectedEditionSection</b></span>
@@ -803,8 +862,8 @@ other parts of the edition outline.</p>
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="192"
-                                    class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:192</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="190"
+                                    class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:190</a></div>
                         </td>
                     </tr>
 
@@ -847,8 +906,8 @@ other parts of the edition outline.</p>
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="159"
-                                    class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:159</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="157"
+                                    class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:157</a></div>
                         </td>
                     </tr>
 
@@ -875,32 +934,32 @@ other parts of the edition outline.</p>
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="updateEditionComplex"></a>
+                    <a name="updateIsPrefaceView"></a>
                     <span class="name">
-                        <span ><b>updateEditionComplex</b></span>
-                        <a href="#updateEditionComplex"><span class="icon ion-ios-link"></span></a>
+                        <span ><b>updateIsPrefaceView</b></span>
+                        <a href="#updateIsPrefaceView"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>updateEditionComplex(editionComplex: <a href="../classes/EditionComplex.html" target="_self">EditionComplex</a>)</code>
+<code>updateIsPrefaceView(isView: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
                 </td>
             </tr>
 
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="87"
-                                    class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:87</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="238"
+                                    class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:238</a></div>
                         </td>
                     </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                        <div class="io-description"><p>Public method: updateEditionComplex.</p>
-<p>It updates the edition complex stream with the given edition complex.</p>
+                        <div class="io-description"><p>Public method: updateIsPrefaceView.</p>
+<p>It updates the isPrefaceView stream with the given boolean value.</p>
 </div>
 
                             <div class="io-description">
@@ -917,9 +976,9 @@ other parts of the edition outline.</p>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                                <td>editionComplex</td>
+                                                <td>isView</td>
                                             <td>
-                                                            <code><a href="../classes/EditionComplex.html" target="_self" >EditionComplex</a></code>
+                                                            <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
                                             </td>
 
                                             <td>
@@ -928,7 +987,7 @@ other parts of the edition outline.</p>
 
 
                                             <td>
-                                                    <p>The given edition complex.</p>
+                                                    <p>The given isPrefaceView flag.</p>
 
                                             </td>
                                         </tr>
@@ -940,7 +999,7 @@ other parts of the edition outline.</p>
 
                         </div>
                             <div class="io-description">
-                                <p>Sets the next edition complex to the stream.</p>
+                                <p>Sets the next isPrefaceView flag to the stream.</p>
 
                             </div>
                 </td>
@@ -967,8 +1026,8 @@ other parts of the edition outline.</p>
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="240"
-                                    class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:240</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="273"
+                                    class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:273</a></div>
                         </td>
                     </tr>
 
@@ -1027,6 +1086,82 @@ other parts of the edition outline.</p>
         <tbody>
             <tr>
                 <td class="col-md-4">
+                    <a name="updateSelectedEditionComplex"></a>
+                    <span class="name">
+                        <span ><b>updateSelectedEditionComplex</b></span>
+                        <a href="#updateSelectedEditionComplex"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateSelectedEditionComplex(editionComplex: <a href="../classes/EditionComplex.html" target="_self">EditionComplex</a>)</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="96"
+                                    class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:96</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-description"><p>Public method: updateSelectedEditionComplex.</p>
+<p>It updates the selected edition complex stream with the given edition complex.</p>
+</div>
+
+                            <div class="io-description">
+                                <b>Parameters :</b>
+                                
+                                <table class="params">
+                                    <thead>
+                                        <tr>
+                                            <td>Name</td>
+                                                <td>Type</td>
+                                            <td>Optional</td>
+                                                <td>Description</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                                <td>editionComplex</td>
+                                            <td>
+                                                            <code><a href="../classes/EditionComplex.html" target="_self" >EditionComplex</a></code>
+                                            </td>
+
+                                            <td>
+                                                    No
+                                            </td>
+
+
+                                            <td>
+                                                    <p>The given edition complex.</p>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                        </div>
+                            <div class="io-description">
+                                <p>Sets the next edition complex to the stream.</p>
+
+                            </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
                     <a name="updateSelectedEditionSection"></a>
                     <span class="name">
                         <span ><b>updateSelectedEditionSection</b></span>
@@ -1043,8 +1178,8 @@ other parts of the edition outline.</p>
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="205"
-                                    class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:205</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="203"
+                                    class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:203</a></div>
                         </td>
                     </tr>
 
@@ -1119,8 +1254,8 @@ other parts of the edition outline.</p>
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="170"
-                                    class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:170</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="168"
+                                    class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:168</a></div>
                         </td>
                     </tr>
 
@@ -1201,7 +1336,7 @@ other parts of the edition outline.</p>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:25</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:24</a></div>
                         </td>
                     </tr>
 
@@ -1218,29 +1353,29 @@ other parts of the edition outline.</p>
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="_editionComplexStream$"></a>
+                    <a name="_isPrefaceViewStream$"></a>
                     <span class="name">
                             <span class="modifier">Private</span>
                             <span class="modifier">Readonly</span>
-                        <span ><b>_editionComplexStream$</b></span>
-                        <a href="#_editionComplexStream$"><span class="icon ion-ios-link"></span></a>
+                        <span ><b>_isPrefaceViewStream$</b></span>
+                        <a href="#_isPrefaceViewStream$"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
                 <tr>
                     <td class="col-md-4">
-                        <i>Default value : </i><code>this._editionComplexSubject.asObservable()</code>
+                        <i>Default value : </i><code>this._isPrefaceViewSubject.asObservable()</code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:35</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:34</a></div>
                         </td>
                     </tr>
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-description"><p>Private readonly edition complex stream as observable (<code>ReplaySubject</code>).</p>
+                    <div class="io-description"><p>Private readonly isPrefaceView stream as observable (<code>ReplaySubject</code>).</p>
 </div>
                 </td>
             </tr>
@@ -1251,28 +1386,28 @@ other parts of the edition outline.</p>
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="_editionComplexSubject"></a>
+                    <a name="_isPrefaceViewSubject"></a>
                     <span class="name">
                             <span class="modifier">Private</span>
-                        <span ><b>_editionComplexSubject</b></span>
-                        <a href="#_editionComplexSubject"><span class="icon ion-ios-link"></span></a>
+                        <span ><b>_isPrefaceViewSubject</b></span>
+                        <a href="#_isPrefaceViewSubject"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
                 <tr>
                     <td class="col-md-4">
-                        <i>Default value : </i><code>new ReplaySubject&lt;EditionComplex&gt;(this._bufferSize)</code>
+                        <i>Default value : </i><code>new ReplaySubject&lt;boolean&gt;(this._bufferSize)</code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:30</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:29</a></div>
                         </td>
                     </tr>
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-description"><p>Private replay subject to handle edition complex.</p>
+                    <div class="io-description"><p>Private replay subject to flag preface view.</p>
 </div>
                 </td>
             </tr>
@@ -1299,7 +1434,7 @@ other parts of the edition outline.</p>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:45</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:44</a></div>
                         </td>
                     </tr>
 
@@ -1331,13 +1466,78 @@ other parts of the edition outline.</p>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:40</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:39</a></div>
                         </td>
                     </tr>
 
             <tr>
                 <td class="col-md-4">
                     <div class="io-description"><p>Private replay subject to flag row table view.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_selectedEditionComplexStream$"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>_selectedEditionComplexStream$</b></span>
+                        <a href="#_selectedEditionComplexStream$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>this._selectedEditionComplexSubject.asObservable()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:54</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Private readonly edition complex stream as observable (<code>ReplaySubject</code>).</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_selectedEditionComplexSubject"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_selectedEditionComplexSubject</b></span>
+                        <a href="#_selectedEditionComplexSubject"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new ReplaySubject&lt;EditionComplex&gt;(this._bufferSize)</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:49</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Private replay subject to handle the selected edition complex.</p>
 </div>
                 </td>
             </tr>
@@ -1364,7 +1564,7 @@ other parts of the edition outline.</p>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="65" class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:65</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="74" class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:74</a></div>
                         </td>
                     </tr>
 
@@ -1396,7 +1596,7 @@ other parts of the edition outline.</p>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="60" class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:60</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="69" class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:69</a></div>
                         </td>
                     </tr>
 
@@ -1429,7 +1629,7 @@ other parts of the edition outline.</p>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="55" class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:55</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="64" class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:64</a></div>
                         </td>
                     </tr>
 
@@ -1461,7 +1661,7 @@ other parts of the edition outline.</p>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:50</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="59" class="link-to-prism">src/app/views/edition-view/services/edition.service.ts:59</a></div>
                         </td>
                     </tr>
 
@@ -1485,7 +1685,6 @@ other parts of the edition outline.</p>
 import { Observable, ReplaySubject } from &#x27;rxjs&#x27;;
 
 import { EDITION_OUTLINE_DATA } from &#x27;@awg-views/edition-view/data&#x27;;
-import { EDITION_ROUTE_CONSTANTS } from &#x27;@awg-views/edition-view/edition-route-constants&#x27;;
 import { EditionComplex, EditionOutlineSection, EditionOutlineSeries } from &#x27;@awg-views/edition-view/models&#x27;;
 
 /**
@@ -1507,14 +1706,14 @@ export class EditionService {
     private _bufferSize &#x3D; 1;
 
     /**
-     * Private replay subject to handle edition complex.
+     * Private replay subject to flag preface view.
      */
-    private _editionComplexSubject &#x3D; new ReplaySubject&lt;EditionComplex&gt;(this._bufferSize);
+    private _isPrefaceViewSubject &#x3D; new ReplaySubject&lt;boolean&gt;(this._bufferSize);
 
     /**
-     * Private readonly edition complex stream as observable (&#x60;ReplaySubject&#x60;).
+     * Private readonly isPrefaceView stream as observable (&#x60;ReplaySubject&#x60;).
      */
-    private readonly _editionComplexStream$ &#x3D; this._editionComplexSubject.asObservable();
+    private readonly _isPrefaceViewStream$ &#x3D; this._isPrefaceViewSubject.asObservable();
 
     /**
      * Private replay subject to flag row table view.
@@ -1525,6 +1724,16 @@ export class EditionService {
      * Private readonly isRowTableView stream as observable (&#x60;ReplaySubject&#x60;).
      */
     private readonly _isRowTableViewStream$ &#x3D; this._isRowTableViewSubject.asObservable();
+
+    /**
+     * Private replay subject to handle the selected edition complex.
+     */
+    private _selectedEditionComplexSubject &#x3D; new ReplaySubject&lt;EditionComplex&gt;(this._bufferSize);
+
+    /**
+     * Private readonly edition complex stream as observable (&#x60;ReplaySubject&#x60;).
+     */
+    private readonly _selectedEditionComplexStream$ &#x3D; this._selectedEditionComplexSubject.asObservable();
 
     /**
      * Private replay subject to handle the selected edition series.
@@ -1547,38 +1756,38 @@ export class EditionService {
     private readonly _selectedEditionSectionStream$ &#x3D; this._selectedEditionSectionSubject.asObservable();
 
     /**
-     * Public method: getEditionComplex.
+     * Public method: getSelectedEditionComplex.
      *
-     * It provides the latest edition complex from the edition complex stream.
+     * It provides the latest selected edition complex from the edition complex stream.
      *
      * @returns {Observable&lt;EditionComplex&gt;} The edition complex stream as observable.
      */
-    getEditionComplex(): Observable&lt;EditionComplex&gt; {
-        return this._editionComplexStream$;
+    getSelectedEditionComplex(): Observable&lt;EditionComplex&gt; {
+        return this._selectedEditionComplexStream$;
     }
 
     /**
-     * Public method: updateEditionComplex.
+     * Public method: updateSelectedEditionComplex.
      *
-     * It updates the edition complex stream with the given edition complex.
+     * It updates the selected edition complex stream with the given edition complex.
      *
      * @param {EditionComplex} editionComplex The given edition complex.
      *
      * @returns {void} Sets the next edition complex to the stream.
      */
-    updateEditionComplex(editionComplex: EditionComplex): void {
-        this._editionComplexSubject.next(editionComplex);
+    updateSelectedEditionComplex(editionComplex: EditionComplex): void {
+        this._selectedEditionComplexSubject.next(editionComplex);
     }
 
     /**
-     * Public method: clearEditionComplex.
+     * Public method: clearSelectedEditionComplex.
      *
-     * It clears the edition complex stream.
+     * It clears the selected edition complex stream.
      *
      * @returns {void} Clears the edition complex stream.
      */
-    clearEditionComplex(): void {
-        this._editionComplexSubject.next(null);
+    clearSelectedEditionComplex(): void {
+        this._selectedEditionComplexSubject.next(null);
     }
 
     /**
@@ -1590,17 +1799,6 @@ export class EditionService {
      */
     getEditionOutline(): EditionOutlineSeries[] {
         return EDITION_OUTLINE_DATA;
-    }
-
-    /**
-     * Public method: getEditionSeriesRoute.
-     *
-     * It provides the base route for the edition series section of the app.
-     *
-     * @returns {string} The edition series route.
-     */
-    getEditionSeriesRoute(): string {
-        return EDITION_ROUTE_CONSTANTS.EDITION.route + EDITION_ROUTE_CONSTANTS.SERIES.route;
     }
 
     /**
@@ -1697,6 +1895,41 @@ export class EditionService {
      */
     clearSelectedEditionSection(): void {
         this._selectedEditionSectionSubject.next(null);
+    }
+
+    /**
+     * Public method: getIsPrefaceView.
+     *
+     * It provides the latest isPrefaceView flag from the isPrefaceView stream.
+     *
+     * @returns {Observable&lt;boolean&gt;} The isPrefaceView stream as observable.
+     */
+    getIsPrefaceView(): Observable&lt;boolean&gt; {
+        return this._isPrefaceViewStream$;
+    }
+
+    /**
+     * Public method: updateIsPrefaceView.
+     *
+     * It updates the isPrefaceView stream with the given boolean value.
+     *
+     * @param {boolean} isView The given isPrefaceView flag.
+     *
+     * @returns {void} Sets the next isPrefaceView flag to the stream.
+     */
+    updateIsPrefaceView(isView: boolean): void {
+        this._isPrefaceViewSubject.next(isView);
+    }
+
+    /**
+     * Public method: clearIsPrefaceView.
+     *
+     * It clears the isPrefaceView stream.
+     *
+     * @returns {void} Clears the isPrefaceView stream.
+     */
+    clearIsPrefaceView(): void {
+        this._isPrefaceViewSubject.next(null);
     }
 
     /**
