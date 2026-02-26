@@ -267,7 +267,6 @@
                             "sheetId": "Mx_465_Sk1",
                             "sigle": "M* 465 Sk1",
                             "sigleAddendum": "",
-                            "selectable": false,
                             "segmentSplit": 1,
                             "segments": [
                                 {
@@ -671,8 +670,8 @@
                             "segments": [
                                 {
                                     "position": 1,
-                                    "startSystem": 8,
-                                    "endSystem": 7
+                                    "startSystem": 4,
+                                    "endSystem": 3
                                 }
                             ]
                         },
@@ -686,8 +685,8 @@
                             "segments": [
                                 {
                                     "position": 1,
-                                    "startSystem": 8,
-                                    "endSystem": 7
+                                    "startSystem": 2,
+                                    "endSystem": 1
                                 }
                             ]
                         }
@@ -745,6 +744,21 @@
                                     "position": 1,
                                     "startSystem": 10,
                                     "endSystem": 8
+                                }
+                            ]
+                        },
+                        {
+                            "complexId": "",
+                            "sheetId": "",
+                            "sigle": "Skizze von der Hand",
+                            "sigleAddendum": "Arnold Schönbergs",
+                            "selectable": false,
+                            "segmentSplit": 2,
+                            "segments": [
+                                {
+                                    "position": 2,
+                                    "startSystem": 10,
+                                    "endSystem": 9
                                 }
                             ]
                         },
