@@ -11,7 +11,7 @@
                     "1 Bogen (Bl. 1/2). Horizontale Knickfalte, der Bogen ist horizontal und vertikal eingerissen. Riss am Rand unten Mitte."
                 ],
                 "writingMaterialStrings": [
-                    "Notenpapier (auf dem Kopf stehend), 18 Systeme, Format: hoch 343 × 264 mm, Firmenzeichen: [J.E. &amp; Co.] | <em>N<sup>o</sup>. 5</em> | <em>18 linig.</em> oben rechts auf auf Bl. 1<sup>r</sup> und 2<sup>r</sup>"
+                    "Notenpapier (auf dem Kopf stehend), 18 Systeme, Format: hoch 343 × 264 mm, Firmenzeichen: [J.E. &amp; Co.] | <em>N<sup>o</sup>. 5</em> | <em>18 linig.</em> oben rechts auf Bl. 1<sup>v</sup> und 2<sup>v</sup>"
                 ],
                 "writingInstruments": {
                     "main": "Bleistift",
@@ -504,7 +504,7 @@
             "physDesc": {
                 "conditions": ["1 Bogen (Bl. 1/2). Horizontale Knickfalte, der Bogen ist in der Falte eingerissen."],
                 "writingMaterialStrings": [
-                    "Notenpapier (auf dem Kopf stehend), 18 Systeme, Format: hoch 343 × 264 mm, Firmenzeichen: [J.E. &amp; Co.] | <em>N<sup>o</sup>. 5</em> | <em>18 linig.</em> oben rechts auf auf Bl. 1<sup>r</sup> und 2<sup>r</sup>"
+                    "Notenpapier (auf dem Kopf stehend), 18 Systeme, Format: hoch 343 × 264 mm, Firmenzeichen: [J.E. &amp; Co.] | <em>N<sup>o</sup>. 5</em> | <em>18 linig.</em> oben rechts auf Bl. 1<sup>v</sup> und 2<sup>v</sup>"
                 ],
                 "writingInstruments": {
                     "main": "Bleistift",
@@ -1053,7 +1053,7 @@
                                             "measure": "6",
                                             "system": "",
                                             "position": "4/8 bis letzte Note",
-                                            "comment": "Linie zwischen d<sup>2</sup> und g<sup>2</sup> in Klav. o. sowie H und g in Klav. u. zur Verdeutlichung der verdeckten Otkavparallele."
+                                            "comment": "Linie zwischen d<sup>2</sup> und g<sup>2</sup> in Klav. o. sowie H und g in Klav. u. zur Verdeutlichung der verdeckten Oktavparallele."
                                         },
                                         {
                                             "measure": "6",
